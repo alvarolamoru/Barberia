@@ -1,0 +1,75 @@
+
+//--------------------------------------------Barberos-------------------------------------------
+GET http://localhost:3000/api/Barberos
+
+###
+POST http://localhost:3000/api/Barberos
+Content-Type: application/json
+
+    {
+        "ciudad":"Palma Soriano",
+        "contacto":"55434520",
+        "cortes":"magua",
+        "direccion":"edif R apto 2 miraflores",
+        "direccion_maps":"entre santa catalina y juan delgado",
+        "imagen":"wrethyjgkharsrtdtfg",
+        "nombre":"Daniel Carballo"
+    }
+
+###
+DELETE http://localhost:3000/api/Barberos/65fc991360658fa93ff22985
+
+
+
+
+
+
+//------------------------------------Cortes-----------------------------------------------------
+###
+POST http://localhost:3000/api/cortes
+Content-Type: application/json
+
+    {
+        "nombre":"disminucion",
+        "imagen":"joiug",
+        "descripcion":"La tissa",
+        "precio":2,
+        "id_barbero":"fdsavbghfdgas",
+        "disponibilidad":true,
+        "style":"afro"
+    }
+
+###
+GET http://localhost:3000/api/cortes
+
+
+
+
+//----------------------------------------Productos------------------------------------------------
+###
+POST http://localhost:3000/api/productos
+Content-Type: application/json
+
+    {
+       "precio":89,
+       "imagen":"sdfgcvbn"
+    }
+
+### 
+GET http://localhost:3000/api/productos
+
+//-------------------------------reservas;-------------------------------------------
+###
+POST http://localhost:3000/api/reservas
+Content-Type: application/json
+
+    {
+       "id_barbero":89,
+       "qr":"sdfgcvbn",
+       "fecha":"sdfgcvbn",
+       "hora":"sdfgcvbn",
+       "estado":true
+    }
+
+###
+ GET  http://localhost:3000/api/reservas 
